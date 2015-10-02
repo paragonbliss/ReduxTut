@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-import { compose, createStore } from 'redux';
+import { compose, createStore, combineReducers} from 'redux';
 import { devTools, persistState } from 'redux-devtools';
 import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
-import { addFriend, deleteFriend, starFriend } from '../actions/FriendsActions';
 
+import { addFriend, deleteFriend, starFriend } from '../actions/FriendsActions';
 import FriendListApp from './FriendListApp';
 import * as reducers from '../reducers/friendlist';
 
